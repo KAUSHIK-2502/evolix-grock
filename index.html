@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EVOLIX 2K26 | National Level Technical Symposium</title>
+  <meta name="description" content="EVOLIX 2K26 - National Level Technical Symposium by EEE Department, JJCET, Tiruchirappalli on April 10, 2026."/>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  
+  <style>
+    body { font-family: 'Poppins', sans-serif; background: #f8f9fa; color: #333; }
+    .navbar { background: linear-gradient(90deg, #0d6efd, #6610f2); }
+    .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; color: white; padding: 120px 0 80px; text-align: center; }
+    .card { transition: transform 0.3s; border: none; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+    .card:hover { transform: translateY(-10px); }
+    .section-title { position: relative; display: inline-block; padding-bottom: 10px; }
+    .section-title::after { content: ''; position: absolute; width: 60px; height: 4px; background: #0d6efd; bottom: 0; left: 50%; transform: translateX(-50%); }
+    .countdown { font-size: 2.5rem; font-weight: 600; }
+    footer { background: #0d6efd; color: white; padding: 40px 0; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">EVOLIX <span class="text-warning">2K26</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="#workshop">Workshop</a></li>
+          <li class="nav-item"><a class="nav-link" href="#fees">Fees & Register</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="display-3 fw-bold mb-3">EVOLIX 2K26</h1>
+      <p class="lead fs-4 mb-4">National Level Technical Symposium<br>Department of Electrical & Electronics Engineering</p>
+      <p class="fs-5">April 10, 2026 | 9:00 AM onwards | JJCET Auditorium, Tiruchirappalli</p>
+      
+      <div class="mt-5">
+        <h4>Time Left</h4>
+        <div id="countdown" class="countdown text-warning d-flex justify-content-center gap-4 flex-wrap">
+          <span id="days">00</span>d
+          <span id="hours">00</span>h
+          <span id="minutes">00</span>m
+          <span id="seconds">00</span>s
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events -->
+  <section id="events" class="py-5">
+    <div class="container">
+      <h2 class="text-center section-title mb-5">Events</h2>
+      <div class="row g-4">
+
+        <!-- Technical -->
+        <div class="col-lg-4">
+          <div class="card h-100 bg-primary text-white">
+            <div class="card-body">
+              <h3 class="card-title">Technical Events</h3>
+              <ul class="list-unstyled">
+                <li>📄 Paper Vista – Research Paper Presentation</li>
+                <li>💡 Project Expo – Innovative Projects</li>
+                <li>🧠 Brain Chain – Logical Puzzle Challenge</li>
+                <li>❓ Quiz Arena – Technical Quiz</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Non-Technical -->
+        <div class="col-lg-4">
+          <div class="card h-100 bg-success text-white">
+            <div class="card-body">
+              <h3 class="card-title">Non-Technical Events</h3>
+              <ul class="list-unstyled">
+                <li>🎭 Dumb Charades</li>
+                <li>🔤 Signal Scrambles</li>
+                <li>🎉 Fun Zone</li>
+                <li>🏏 Box Cricket</li>
+                <li>🎱 Carrom Tournament</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- E-Sports -->
+        <div class="col-lg-4">
+          <div class="card h-100 bg-danger text-white">
+            <div class="card-body">
+              <h3 class="card-title">E-Sports</h3>
+              <ul class="list-unstyled">
+                <li>🔥 Free Fire</li>
+                <li>⚽ E-Football</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Workshop -->
+  <section id="workshop" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center section-title mb-5">Workshop</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card shadow">
+            <div class="card-body p-5">
+              <h3>Embedded + IoT Workshop</h3>
+              <p class="lead">Hands-on 2-day workshop | Limited to 50 seats</p>
+              <p>Fee: ₹250 per participant</p>
+              <p class="fw-bold">Don't miss this opportunity to level up your skills!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fees & Register -->
+  <section id="fees" class="py-5">
+    <div class="container text-center">
+      <h2 class="section-title mb-4">Participation Fees</h2>
+      <p class="fs-4">Individual Events: <strong>₹200</strong> per head</p>
+      <p class="fs-4 mb-5">Workshop: <strong>₹250</strong> per head</p>
+      
+      <a href="https://wa.me/919080252129?text=Hi%20I%20want%20to%20register%20for%20EVOLIX%202K26" class="btn btn-primary btn-lg px-5 py-3" target="_blank">Register Now via WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center section-title mb-5">Contact Us</h2>
+      <div class="row text-center g-4">
+        <div class="col-md-4">
+          <h5>Faculty Coordinators</h5>
+          <p>Dr. G. Sundararajan – 9842253235<br>Mr. P. Jothn Brito – 9942770040<br>Mrs. R. Gayathri – 9344735899</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Student Coordinators</h5>
+          <p>S. Aksheetha – 7373373799<br>M. Sanjeev Raj – 9150952958</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Queries</h5>
+          <p>Karthikeyan R – 9080252129<br>Email: evolix_2k26@gmail.com<br>Instagram: @EVOLIX_2K26</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-0">© 2026 EVOLIX 2K26 | Department of EEE, J.J. College of Engineering and Technology</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Countdown Script -->
+  <script>
+    const eventDate = new Date("2026-04-10T09:00:00+05:30").getTime();
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = eventDate - now;
+
+      if (distance < 0) {
+        document.getElementById("countdown").innerHTML = "Event Started!";
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("days").textContent = days.toString().padStart(2, '0');
+      document.getElementById("hours").textContent = hours.toString().padStart(2, '0');
+      document.getElementById("minutes").textContent = minutes.toString().padStart(2, '0');
+      document.getElementById("seconds").textContent = seconds.toString().padStart(2, '0');
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+  </script>
+
+</body>
+</html>
