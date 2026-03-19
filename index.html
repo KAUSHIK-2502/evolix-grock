@@ -3,101 +3,90 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>EVOLIX 2K26 | EEE National Symposium | JJCET</title>
-  <meta name="description" content="EVOLIX 2K26 - National Level Technical Symposium by Department of Electrical & Electronics Engineering, JJCET, Tiruchirappalli. April 10, 2026."/>
+  <title>EVOLIX 2K26 | EEE Core Symposium | JJCET</title>
+  <meta name="description" content="EVOLIX 2K26 - National Level Symposium by Electrical & Electronics Engineering Dept, JJCET. Power. Current. Innovation."/>
   
-  <!-- Bootstrap 5.3 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
-  
-  <!-- Google Fonts - Energetic & Tech -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Electrolize&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
 
   <style>
     :root {
-      --primary-electric: #00f0ff;     /* Neon cyan electric blue */
-      --primary-dark: #0a1f44;         /* Deep navy for background */
-      --accent-neon: #ff00aa;          /* Neon pink/purple spark */
-      --glow: rgba(0, 240, 255, 0.6);
+      --eee-blue: #00eaff;       /* Electric cyan current */
+      --eee-spark: #ffcc00;      /* Yellow/orange spark/high voltage */
+      --eee-dark: #0a0f1e;       /* Deep night/power station bg */
+      --glow-blue: rgba(0, 234, 255, 0.7);
+      --glow-spark: rgba(255, 204, 0, 0.6);
     }
     body {
-      font-family: 'Roboto Mono', monospace;
-      background: var(--primary-dark);
-      color: #e0f7ff;
+      font-family: 'Electrolize', sans-serif;
+      background: var(--eee-dark);
+      color: #d0f8ff;
       background-image: 
-        radial-gradient(circle at 10% 20%, rgba(0,240,255,0.08) 0%, transparent 25%),
-        radial-gradient(circle at 90% 80%, rgba(255,0,170,0.06) 0%, transparent 30%);
+        radial-gradient(circle at 15% 30%, rgba(0,234,255,0.12) 0%, transparent 40%),
+        radial-gradient(circle at 85% 70%, rgba(255,204,0,0.08) 0%, transparent 50%);
     }
-    h1, h2, h3 { font-family: 'Orbitron', sans-serif; color: var(--primary-electric); text-shadow: 0 0 15px var(--glow); }
+    h1, h2, h3 { font-family: 'Orbitron', sans-serif; text-shadow: 0 0 20px var(--glow-blue); }
     .navbar {
-      background: linear-gradient(90deg, #001f3f, #0a1f44) !important;
-      border-bottom: 1px solid var(--primary-electric);
-      box-shadow: 0 0 20px rgba(0,240,255,0.3);
+      background: linear-gradient(to right, #001122, #002244) !important;
+      border-bottom: 2px solid var(--eee-blue);
+      box-shadow: 0 4px 30px rgba(0,234,255,0.25);
     }
-    .nav-link { color: #b3ffff !important; }
-    .nav-link:hover { color: var(--primary-electric) !important; text-shadow: 0 0 10px var(--glow); }
     .hero {
-      background: linear-gradient(rgba(10,31,68,0.75), rgba(0,15,40,0.85)),
-                  url('https://thumbs.dreamstime.com/b/glowing-futuristic-circuit-board-stretching-distance-illuminated-neon-blue-electric-currents-high-tech-design-363925797.jpg') center/cover no-repeat;
-      padding: 200px 0 140px;
+      background: linear-gradient(rgba(10,15,30,0.8), rgba(0,0,20,0.9)),
+                  url('https://thumbs.dreamstime.com/b/powerful-lightning-bolts-strike-transformer-creating-shower-sparks-against-dark-rainy-night-sky-intense-electrical-storm-with-428556231.jpg') center/cover no-repeat;
+      padding: 220px 0 140px;
       text-align: center;
       position: relative;
-      overflow: hidden;
     }
-    .hero::before {
+    .hero::after {
       content: '';
       position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: radial-gradient(circle at center, transparent 40%, rgba(0,240,255,0.15) 100%);
+      inset: 0;
+      background: radial-gradient(circle at center, transparent 30%, rgba(0,234,255,0.15) 100%);
       pointer-events: none;
     }
     .card {
-      background: rgba(10, 31, 68, 0.6);
-      border: 1px solid var(--primary-electric);
-      border-radius: 12px;
-      box-shadow: 0 0 25px rgba(0,240,255,0.2);
-      transition: all 0.4s;
-      backdrop-filter: blur(8px);
+      background: rgba(5,10,25,0.75);
+      border: 1px solid var(--eee-blue);
+      box-shadow: 0 0 30px rgba(0,234,255,0.3);
+      transition: all 0.5s;
     }
     .card:hover {
-      transform: translateY(-10px) scale(1.03);
-      box-shadow: 0 0 40px var(--glow), 0 0 80px rgba(255,0,170,0.3);
-      border-color: var(--accent-neon);
+      transform: translateY(-12px);
+      box-shadow: 0 0 60px var(--glow-blue), 0 0 40px var(--glow-spark);
+      border-color: var(--eee-spark);
     }
-    .accordion-button {
-      background: linear-gradient(90deg, #001f3f, #0a2b5c);
-      color: var(--primary-electric);
-      font-weight: bold;
-    }
-    .accordion-button:not(.collapsed) { background: var(--primary-electric); color: #000; }
-    .countdown-box {
-      background: rgba(0,15,40,0.7);
-      border: 2px solid var(--primary-electric);
-      border-radius: 20px;
-      padding: 25px;
-      box-shadow: 0 0 30px var(--glow);
-    }
-    .btn-electric {
-      background: var(--primary-electric);
+    .btn-eee {
+      background: linear-gradient(45deg, var(--eee-blue), #00bfff);
       border: none;
       color: #000;
       font-weight: bold;
-      box-shadow: 0 0 20px var(--glow);
+      box-shadow: 0 0 25px var(--glow-blue);
     }
-    .btn-electric:hover { background: #00ccff; box-shadow: 0 0 35px #00f0ff; }
-    footer { background: #001122; border-top: 2px solid var(--primary-electric); }
+    .btn-eee:hover { background: linear-gradient(45deg, #00bfff, var(--eee-blue)); box-shadow: 0 0 45px var(--glow-blue); }
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 120px;
+      height: 4px;
+      background: linear-gradient(to right, var(--eee-blue), var(--eee-spark));
+      margin: 10px auto;
+      border-radius: 2px;
+    }
+    .icon-spark { color: var(--eee-spark); text-shadow: 0 0 15px var(--glow-spark); }
   </style>
 </head>
 <body>
 
-  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand fw-bold fs-3" href="#">EVOLIX <span style="color:var(--accent-neon)">2K26</span></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <a class="navbar-brand fw-bold fs-3" href="#">EVOLIX <span style="color:var(--eee-spark)">2K26</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto align-items-center">
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
           <li class="nav-item"><a class="nav-link" href="#workshop">Workshop</a></li>
           <li class="nav-item"><a class="nav-link" href="#register">Register</a></li>
@@ -107,15 +96,14 @@
     </div>
   </nav>
 
-  <!-- Hero -->
   <section class="hero">
     <div class="container">
       <h1 class="display-2 fw-bold mb-3">EVOLIX 2K26</h1>
-      <p class="lead fs-4 mb-4" style="color:#b3ffff">National Level Technical Symposium<br>Department of Electrical & Electronics Engineering</p>
-      <p class="fs-5">10 April 2026 • 9:00 AM • JJCET Auditorium, Tiruchirappalli</p>
+      <p class="lead fs-4 mb-4">Core Electrical & Electronics Symposium<br>Where Current Meets Innovation</p>
+      <p class="fs-5">10 April 2026 • 9:00 AM • JJCET Auditorium</p>
 
-      <div class="mt-5 countdown-box mx-auto" style="max-width: 550px;">
-        <h4 class="mb-3" style="color:#fff">Power Surge Incoming</h4>
+      <div class="mt-5 mx-auto" style="max-width:600px; background:rgba(0,0,0,0.4); border:1px solid var(--eee-blue); border-radius:20px; padding:25px; box-shadow:0 0 40px var(--glow-blue);">
+        <h4 class="mb-3">Time to Power Up</h4>
         <div id="countdown" class="d-flex justify-content-center gap-4 fs-1 fw-bold flex-wrap">
           <div><span id="days">00</span><small>d</small></div>
           <div><span id="hours">00</span><small>h</small></div>
@@ -125,143 +113,120 @@
       </div>
 
       <div class="mt-5">
-        <a href="#register" class="btn btn-electric btn-lg px-5 py-3">Energize Your Registration</a>
+        <a href="#register" class="btn btn-eee btn-lg px-5 py-3">Generate Your Spot <i class="bi bi-lightning-fill icon-spark ms-2"></i></a>
       </div>
     </div>
   </section>
 
-  <!-- Events -->
   <section id="events" class="py-5">
     <div class="container">
-      <h2 class="text-center mb-5 display-5 fw-bold">Powered Events</h2>
-      <div class="accordion" id="eventsAccordion">
-
-        <div class="accordion-item">
-          <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#techEvents">Technical Events</button></h2>
-          <div id="techEvents" class="accordion-collapse collapse show">
-            <div class="accordion-body">
-              <ul class="list-unstyled">
-                <li>📄 Paper Vista – Research Paper Presentation</li>
-                <li>💡 Project Expo – Innovative Projects Showcase</li>
-                <li>🧠 Brain Chain – Logical Puzzle Challenge</li>
-                <li>❓ Quiz Arena – Technical Quiz Battle</li>
-              </ul>
-            </div>
+      <h2 class="text-center display-5 fw-bold section-title mb-5">Core Events</h2>
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="card h-100 text-center p-4">
+            <i class="bi bi-lightning-charge fs-1 mb-3" style="color:var(--eee-spark)"></i>
+            <h4>Technical Events</h4>
+            <ul class="list-unstyled mt-3">
+              <li>Paper Vista</li>
+              <li>Project Expo</li>
+              <li>Brain Chain</li>
+              <li>Quiz Arena</li>
+            </ul>
           </div>
         </div>
-
-        <div class="accordion-item">
-          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#nonTech">Non-Technical Events</button></h2>
-          <div id="nonTech" class="accordion-collapse collapse">
-            <div class="accordion-body">
-              <ul class="list-unstyled">
-                <li>🎭 Dumb Charades</li>
-                <li>🔤 Signal Scrambles</li>
-                <li>🎉 Fun Zone</li>
-                <li>🏏 Box Cricket</li>
-                <li>🎱 Carrom Tournament</li>
-              </ul>
-            </div>
+        <div class="col-lg-4">
+          <div class="card h-100 text-center p-4">
+            <i class="bi bi-lightbulb fs-1 mb-3" style="color:var(--eee-blue)"></i>
+            <h4>Non-Technical Events</h4>
+            <ul class="list-unstyled mt-3">
+              <li>Dumb Charades</li>
+              <li>Signal Scrambles</li>
+              <li>Fun Zone</li>
+              <li>Box Cricket</li>
+              <li>Carrom</li>
+            </ul>
           </div>
         </div>
-
-        <div class="accordion-item">
-          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#esports">E-Sports</button></h2>
-          <div id="esports" class="accordion-collapse collapse">
-            <div class="accordion-body">
-              <ul class="list-unstyled">
-                <li>🔥 Free Fire – Battle Royale</li>
-                <li>⚽ E-Football – Virtual Soccer</li>
-              </ul>
-            </div>
+        <div class="col-lg-4">
+          <div class="card h-100 text-center p-4">
+            <i class="bi bi-controller fs-1 mb-3" style="color:var(--eee-spark)"></i>
+            <h4>E-Sports</h4>
+            <ul class="list-unstyled mt-3">
+              <li>Free Fire</li>
+              <li>E-Football</li>
+            </ul>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- Workshop -->
-  <section id="workshop" class="py-5" style="background: linear-gradient(135deg, #001f3f, #0a2b5c);">
+  <section id="workshop" class="py-5" style="background:linear-gradient(135deg, #001122, #002244);">
     <div class="container text-center">
-      <h2 class="display-5 fw-bold mb-4">High-Voltage Workshop</h2>
-      <div class="card mx-auto shadow-lg" style="max-width: 700px; background: rgba(0,15,40,0.8); border: 2px solid var(--primary-electric);">
-        <div class="card-body p-5">
-          <h3>Embedded Systems + IoT</h3>
-          <p class="lead">2-Day Hands-on Power Session | Only 50 Seats – Charge Fast!</p>
-          <p class="fs-4 fw-bold" style="color:var(--primary-electric)">₹250 / participant</p>
-          <p>Build circuits, connect sensors, deploy to cloud. Certificates + real skills boost.</p>
-        </div>
+      <h2 class="display-5 fw-bold section-title mb-4">High Voltage Workshop</h2>
+      <div class="card mx-auto p-5 shadow" style="max-width:750px; border:2px solid var(--eee-blue);">
+        <h3>Embedded + IoT</h3>
+        <p class="lead fs-4">2-Day Hands-on | 50 Seats Only</p>
+        <p class="fs-3 fw-bold" style="color:var(--eee-spark)">₹250</p>
+        <p class="mt-3">Circuit building • Sensor integration • Real power applications</p>
       </div>
     </div>
   </section>
 
-  <!-- Register -->
   <section id="register" class="py-5">
     <div class="container text-center">
-      <h2 class="display-5 fw-bold mb-4">Charge Your Spot</h2>
-      <div class="row justify-content-center g-4">
+      <h2 class="display-5 fw-bold section-title mb-4">Connect & Register</h2>
+      <div class="row justify-content-center g-4 mb-5">
         <div class="col-md-5">
-          <div class="card h-100">
-            <div class="card-body">
-              <h4>Individual Events</h4>
-              <p class="fs-3 fw-bold" style="color:var(--primary-electric)">₹200 <small>/ head</small></p>
-            </div>
+          <div class="card p-4">
+            <h4>Individual Events</h4>
+            <p class="fs-3 fw-bold" style="color:var(--eee-blue)">₹200</p>
           </div>
         </div>
         <div class="col-md-5">
-          <div class="card h-100">
-            <div class="card-body">
-              <h4>Workshop</h4>
-              <p class="fs-3 fw-bold" style="color:var(--primary-electric)">₹250 <small>/ head</small></p>
-            </div>
+          <div class="card p-4">
+            <h4>Workshop</h4>
+            <p class="fs-3 fw-bold" style="color:var(--eee-blue)">₹250</p>
           </div>
         </div>
       </div>
-      <div class="mt-5">
-        <a href="https://wa.me/919080252129?text=Hi%20EVOLIX%202K26%20Team!%20Registering%20for..." class="btn btn-electric btn-lg px-5 py-3 me-3 mb-3" target="_blank">Register via WhatsApp</a>
-        <a href="https://forms.gle/YOUR_FORM_LINK_HERE" class="btn btn-outline-light btn-lg px-5 py-3" target="_blank">Google Form Backup</a>
-      </div>
+      <a href="https://wa.me/919080252129?text=Hi%20EVOLIX%202K26%20-%20Registering%20for%20events/workshop" class="btn btn-eee btn-lg px-5 py-3 me-3" target="_blank">Register via WhatsApp <i class="bi bi-lightning ms-2"></i></a>
+      <a href="https://forms.gle/YOUR_FORM_LINK" class="btn btn-outline-light btn-lg px-5 py-3" target="_blank">Google Form</a>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="py-5" style="background: #000d1f;">
+  <section id="contact" class="py-5" style="background:#000814;">
     <div class="container">
-      <h2 class="text-center display-5 fw-bold mb-5">Connect the Circuit</h2>
+      <h2 class="text-center display-5 fw-bold section-title mb-5">Contact the Power Team</h2>
       <div class="row text-center g-4">
-        <div class="col-md-4"><h5>Faculty Coordinators</h5><p>Dr. G. Sundararajan – 9842253235<br>Mr. P. Jothn Brito – 9942770040<br>Mrs. R. Gayathri – 9344735899</p></div>
-        <div class="col-md-4"><h5>Student Coordinators</h5><p>S. Aksheetha – 7373373799<br>M. Sanjeev Raj – 9150952958</p></div>
-        <div class="col-md-4"><h5>Queries</h5><p>Karthikeyan R – 9080252129<br><a href="mailto:evolix_2k26@gmail.com" style="color:var(--primary-electric)">evolix_2k26@gmail.com</a><br>IG: @EVOLIX_2K26</p></div>
+        <div class="col-md-4"><h5>Faculty</h5><p>Dr. G. Sundararajan – 9842253235<br>Mr. P. Jothn Brito – 9942770040<br>Mrs. R. Gayathri – 9344735899</p></div>
+        <div class="col-md-4"><h5>Students</h5><p>S. Aksheetha – 7373373799<br>M. Sanjeev Raj – 9150952958</p></div>
+        <div class="col-md-4"><h5>Queries</h5><p>Karthikeyan R – 9080252129<br><a href="mailto:evolix_2k26@gmail.com" style="color:var(--eee-blue)">evolix_2k26@gmail.com</a><br>IG: @EVOLIX_2K26</p></div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="text-center py-4">
-    <div class="container">
-      <p class="mb-2">© 2026 EVOLIX 2K26 | Powered by EEE Dept, JJCET</p>
-      <small>Current: Evolving...</small>
-    </div>
+  <footer class="text-center py-4" style="background:#00060f; border-top:2px solid var(--eee-blue);">
+    <p>© 2026 EVOLIX 2K26 | Dept. of Electrical & Electronics Engineering, JJCET</p>
+    <small>Current Flowing... ⚡</small>
   </footer>
 
-  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Countdown -->
   <script>
     const eventDate = new Date("2026-04-10T09:00:00+05:30").getTime();
-    function updateCD() {
+    function updateCountdown() {
       const dist = eventDate - Date.now();
-      if (dist < 0) { document.getElementById("countdown").innerHTML = "<span style='color:#ff00aa'>Power On!</span>"; return; }
+      if (dist < 0) {
+        document.getElementById("countdown").innerHTML = '<span style="color:var(--eee-spark)">Power On Live!</span>';
+        return;
+      }
       document.getElementById("days").textContent = Math.floor(dist / 86400000).toString().padStart(2,'0');
-      document.getElementById("hours").textContent = Math.floor((dist % 86400000) / 3600000).toString().padStart(2,'0');
-      document.getElementById("minutes").textContent = Math.floor((dist % 3600000) / 60000).toString().padStart(2,'0');
-      document.getElementById("seconds").textContent = Math.floor((dist % 60000) / 1000).toString().padStart(2,'0');
+      document.getElementById("hours").textContent = Math.floor((dist % 86400000)/3600000).toString().padStart(2,'0');
+      document.getElementById("minutes").textContent = Math.floor((dist % 3600000)/60000).toString().padStart(2,'0');
+      document.getElementById("seconds").textContent = Math.floor((dist % 60000)/1000).toString().padStart(2,'0');
     }
-    setInterval(updateCD, 1000);
-    updateCD();
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
   </script>
-
 </body>
 </html>
